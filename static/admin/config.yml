@@ -13,12 +13,16 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Path", name: "path", widget: "string"}
+      - {label: "Path of this page", name: "path", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
-
+      - {label: "Gallery"
+        name: "galleryImages"
+        widget: "list"
+        field:
+          - {label: Image, name: image, widget: image}}
   - name: "pages"
     label: "Pages"
     files:
