@@ -19,11 +19,12 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: Image, name: image, widget: image}
-      - label: "Gallery"
+      - label: "Image Collection"
         name: "galleryImages"
         widget: "list"
         fields:
           - {label: "Image", name: "image", widget: "image"}
+          - {label: "Caption", name: "caption", widget: "string"}
   - name: "pages"
     label: "Pages"
     files:
